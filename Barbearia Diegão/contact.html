@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Barbearia Diegão - Home
+        </title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header class="headTitle">
+            <div class="box">
+                <h1>
+                    <img class="logo" src="images/logo.png" alt="Logomarca barba, cabelo e bigodes pretos sobre fundo branco">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Produtos</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="gradientBG">
+                <form class="formContacts">
+
+                    <p>Fala com a gente que a gente responde rapidinho!</p>
+
+                    <input type="text" class="formContactsBlocks" placeholder="Nome" required>
+                    <input type="email" class="formContactsBlocks" placeholder="Email@example.dot" required>
+                    <input type="tel" class="formContactsBlocks" placeholder="Telefone" required>
+
+                    <textarea cols="30" rows="4" class="formContactsBlocks" placeholder="Conte-nos tudo aqui..." required></textarea>
+
+                    <fieldset class="blueBox">
+                        <p>Como você prefere ser contatado?</p>
+                        
+                        <label for="selectEmail" class="formContactsRadio"><input type="radio" name="contactWays" value="email" id="selectEmail" checked>Email</label>
+
+                        <label for="selectPhone" class="formContactsRadio"><input type="radio" name="contactWays" value="phone" id="selectPhone">Telefone</label>
+
+                        <label for="selectApp" class="formContactsRadio"><input type="radio" name="contactWays" value="app" id="selectApp">Aplicativo de Mensagens</label>
+
+                        <label class="formContactsRadio"><input type="checkbox" checked> Sim, eu quero saber das novidades e promoções da Barbearia Diegão!</label>               
+                    </fieldset>
+
+                    <fieldset class="blueBox">
+                        <p> Qual o melhor horário para esse contato?</p>
+                        <select class="pushOptions">
+                            <option>
+                                Escolha aqui
+                            </option>
+                            <option>
+                                Manhã
+                            </option>
+                            <option>
+                                Tarde
+                            </option>
+                            <option>
+                                Noite
+                            </option>
+                            <option>
+                                Qualquer horário
+                            </option>
+                        </select>
+                    </fieldset>
+
+                    <input type="submit" class="formButtons" value="Entrar em contato">
+                    <input type="reset" class="formButtons" value="Limpar dados">
+                </form>
+
+                <table>
+                    
+                    <thead>
+                        <tr>
+                            <th colspan="2">Horário de Funcionamento</th>
+                        </tr>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Segunda-Feira</td>
+                            <td>09h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-Feira</td>
+                            <td>08h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-Feira</td>
+                            <td>08h ~ 19h</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+        </main>
+
+        <footer>                        
+            <img src="images/logo-branco.png">
+            <p>developed by @diegaoProg to</p>
+            <p>&copy; ALURA's basic HTML & CSS course</p>
+        </footer>
+
+    </body>    
+</html>
